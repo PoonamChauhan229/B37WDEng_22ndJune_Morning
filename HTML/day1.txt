@@ -1,0 +1,86 @@
+EXtensions
+HTML Snippets-Mohamed Abusaid
+HTML CSS Support-ecmel
+Live Server-Ritwick Dey
+vscode-icons-VSCode Icons Team
+
+Task: Install Git
+https://git-scm.com/downloads
+
+
+Hyper Text MarkUp Language=>tags and elements
+
+
+Follow certain guidelines/syntax
+
+Shift !=>Emmet Abrevation
+
+OPening and closing tags
+
+Paragraph Tag
+p tag
+
+Tag:
+<p>   </p>
+
+Element=>combination of text and tag
+ <p>This is a Paragraph Tag</p>
+
+
+ Heading Tag:h1 h2 h3 h4 h5 h6
+
+ <h1>Heading1</h1>
+<h2>Heading2</h2>
+<h3>Heading3</h3>
+<h4>Heading4</h4>
+<h5>Heading5</h5>
+<h6>Heading6</h6>
+
+
+Anchor Tag:
+<a></a> a
+
+href
+target
+
+
+Table Tag= table
+
+
+CSS:Cascading Style sheet
+
+3 Types
+Internal CSS==>
+Inline CSS
+EXternal CSS
+
+Internal CSS==>
+<style>
+</style>
+
+
+3 TYpes CSS selector
+tag selector
+id selector
+class selector
+
+colspan=>merge columns horizontaly
+
+self closing
+<br><hr>
+
+input tags:
+<input type="text"/><br><hr>
+<input type="button" value="">
+<input type="checkbox" name="" id="">
+<input type="date" name="" id="">
+<input type="file" name="" id="">
+<input type="number" name="" id="">
+<input type="datetime" name="" id="">
+
+label for attribute
+input id attribute
+
+Simple form
+
+
