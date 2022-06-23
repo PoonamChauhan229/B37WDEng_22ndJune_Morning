@@ -1,0 +1,91 @@
+div:
+division 
+section/division
+n of different elements=>combination of elements=>hetrogenous
+easily styled up
+container purpose
+
+
+section:
+section of the document
+same set of elements
+homogenoues 
+
+
+article:
+newswebsite, magazines
+provides detailed information
+
+inline css
+style="background-color: purple;"
+
+Inline Element
+start in a same line
+occupy the width of the content
+input,a,label
+
+
+
+Block level elements
+Start in an new Start
+occupy the width of the screen irrespective of the content
+
+h1-h6,div,p
+
+Padding:
+Padding is used to create a space around the elemnt inside the defined borders
+
+padding-left
+padding-right
+padding-bottom
+padding-top
+
+
+Margin:
+
+Margin is used to create a space around the elemnt outside the defined borders
+
+margin-left
+margin-right
+margin-bottom
+margin-top
+
+Display Properties:
+
+inline element=>block
+display:inline-block
+
+block=>inline
+display:block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Short cut for writing comments
+ctrl /=>use together
+
+
+Git Commands:
+
+git init
+git remote add origin https://github.com/PoonamChauhan229/PanCard-Form.git
+git add .
+git commit -m"initial commit"
+git push
+
+
+
+
+
+
