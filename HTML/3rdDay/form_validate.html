@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Validate_Correct</title>
+</head>
+<body>
+    <form onsubmit="formValidate()">
+        <label for="name">Name:-</label><br>
+        <input type="text" id="name" name="fname" placeholder="ENter Full name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Email Address" required><br><br>
+
+
+        <!-- radio -->
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br><br>
+
+        <!-- checkbox  vehicles-->
+        
+        <input type="checkbox" name="vehicle01" id="vehicle1" value="bike">
+        <label for="vehicle1">i have a bike</label>
+
+        <br><br>
+        <input type="checkbox" name="vehicle02" id="vehicle2" value="car">
+        <label for="vehicle2">i have car</label>
+
+        <br><br>
+        <input type="checkbox" name="vehicle03" id="vehicle3" value="boat">
+        <label for="vehicle3"> i have a boat</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function formValidate(){
+            alert("Thank You for the Response")
+        }
+    </script>
+</body>
+</html>

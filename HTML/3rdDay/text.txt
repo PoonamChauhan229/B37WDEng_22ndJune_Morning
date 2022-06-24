@@ -1,0 +1,52 @@
+required attribute
+=>Cant submit empty form , if you have mentioned required in input tag
+
+
+alert()
+
+Attach a function on submit button
+1.Alert Message displayed
+2.Form Validation
+
+XXXXXXX IMPROPER WAY XXXXXXX
+
+Attach a function on form==>form onsubmit method
+
+1.Form Validation
+2.Alert Message displayed
+
+Form Methods:
+
+GET 
+POST
+
+GET:
+u will see all the details in URL
+even u dont provide explicity
+
+POST:
+if you dont want to show the details in the URL
+we can use POST
+When we are sending important information
+
+
+Unordered=>type attribute
+bullets form
+list out the items
+disc,circle,square,none
+
+
+
+
+Ordered list=>type attribute
+Serail No>1, 2.....
+Roman letters
+Alphabets ->small letters
+          ->capital letters
+
+
+
+
+
+
+
