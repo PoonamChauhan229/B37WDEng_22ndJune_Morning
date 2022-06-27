@@ -1,0 +1,207 @@
+
+Session Task:
+https://github.com/rvsp/HTML-CSS/blob/master/Mini-tasks/001-HTML.md
+
+CSS
+Box Model
+Flex
+
+CSS:
+Cascading Style sheet
+to make website more beautiful, more elegant more pleasing
+it should create a great user experience
+
+3 types of CSS
+inline
+internal
+external
+
+inline:
+for that particluar element
+<p style="color:red">This is paragraph</p>
+
+internal:
+for that particluar page
+<style>
+        span{
+            background-color: navy;
+            color:white;
+        }
+</style>
+
+
+external css:
+write css in sepearte files
+link both the files
+link tag
+
+rel:related to/relationship:
+build a relationship bet index.html and style.css
+
+href:
+hypetext reference
+path
+<link rel="stylesheet" href="./style.css">
+
+style.css:
+div{
+   width:100px;
+   height:100px;
+   background-color: pink; 
+}
+
+Why use external css?
+edit easily
+link to html pages
+
+
+Priority:
+
+Who has the highest proirity:
+inline internal external
+inline>internal>external
+
+!important:
+overides all the previous css
+that css will be applied where we have the important tag
+
+Selectors:
+
+Y We use selectors:
+to reduce complexity
+
+ 3 types:
+ tag Selectors:
+ it will get applied to that all that element
+ select it by the tag name
+
+ id Selectors
+ Ids are always unique
+select it by the id name=>#idname
+id=""
+class selector
+class selector are unique
+select by class name=>.classname
+class=""
+
+mutliple classes
+
+class="classname1 classname2"
+
+
+Padding:
+Padding is used to create a space around the elemnt inside the defined borders
+
+padding-left
+padding-right
+padding-bottom
+padding-top
+
+Clockwise direction
+P=>TRBL
+
+padding:10px=>TRBL
+padding 10px 20px=> TB RL
+padding: 10px 20px 30px 40px=> TRBL
+padding: 10px 20px 30px=>TRB(L-20px)
+
+Margin:
+
+Margin is used to create a space around the elemnt outside the defined borders
+
+margin-left
+margin-right
+margin-bottom
+margin-top
+
+Clockwise direction
+M=>TRBL
+
+margin:10px=>TRBL
+margin 10px 20px=> TB RL
+margin: 10px 20px 30px 40px=> TRBL
+margin: 10px 20px 30px=>TRB(L-20px)
+
+Border:
+border:1px solid black
+Short hand
+
+border-width:10px
+border-style:dashed,grrove,solid etc;
+border-color:red,pink etc
+
+
+FLex:
+alignment directions:
+align row
+    OR
+align column
+
+flex:
+display:flex=>default row
+chnage column to row
+
+
+flex propertites:
+
+flex direction:
+row
+row-reverse
+
+column
+column-reverse
+
+flex-wrap:
+nowrap
+wrap
+=>row
+=>column
+
+
+justify-content:horizontaly=left and right
+flex-start=>default
+flex-end
+center
+space-around
+space-between
+space-evenly
+
+align-content:vertically=top and bottom
+flex-start
+flex-end
+center
+space-around
+space-between
+space-evenly
+strech=>bydefault
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
