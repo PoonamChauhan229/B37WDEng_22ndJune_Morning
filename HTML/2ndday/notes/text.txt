@@ -58,20 +58,6 @@ display:inline-block
 block=>inline
 display:block;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Short cut for writing comments
 ctrl /=>use together
 
