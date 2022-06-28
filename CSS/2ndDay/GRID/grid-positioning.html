@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:560px;
+            background-color: maroon;
+            text-align: center;
+            display: grid;
+            /* grid-template-columns: 100px 200px 200px ;
+             */
+             grid-template-columns: auto auto auto;
+            /* grid-template-rows: 200px 150px; */
+            grid-template-rows: auto auto;
+            /* grid-gap:30px */
+        }
+        .item{
+            padding:40px;
+        }
+        .item1{
+            background-color: aqua;
+            grid-row-start: 2;
+            grid-row-end:3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+
+        }
+        .item2{
+            background-color: bisque;
+            }
+        .item3{
+            background-color:lightgreen;
+            grid-row-start: 2;
+            grid-row-end:3;
+
+            grid-column-start:3;
+            grid-column-end: 4;
+        }
+        .item4{
+            background-color:lightyellow;
+            grid-row-start:2;
+            grid-row-end:3;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+            
+        }
+        .item5{
+            background-color: pink;
+            grid-row: 1/2;
+            grid-column:1/2 ;
+        }
+        .item6{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+</body>
+</html>

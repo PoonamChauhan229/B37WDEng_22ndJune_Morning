@@ -1,0 +1,167 @@
+Position Properties
+CSS Grid
+Media Queries
+Gradient
+
+5 Position Properties:
+static
+relative
+absolute
+fixed
+sticky
+
+But these wont work, 
+4 necessary propoerties
+left
+OR
+right
+
+top
+OR
+bottom
+
+
+static:
+No change
+By default
+They are not affected left right top bottom
+
+relative:
+it is used when we need to position the HTML element 
+relative to its normal position
+They are affected left right top bottom
+Document flow is affected
+Space is created for them in the Document
+
+absolute:
+this is positioned wrt parent element
+They are affected left right top bottom
+Space is not created for them in the Document
+Document flow is affected
+absolute is always wriiten with relative
+
+
+fixed:
+if you allot any specfic location, it will be fixed
+They are not affected by scrooling
+They are affected left right top bottom
+
+Sticky:
+They are affected left right top bottom
+They are affected by scrooling but once they reach to specific location
+it will behave as fixed
+
+
+GRID:
+2 dimensional
+It is very fast
+=>Row and column
+display: grid;
+grid-template-columns: 100px 200px 200px ;
+grid-template-rows: 200px 150px;
+
+grid-gap
+
+grid-gap:30px;
+grid-column-gap:
+grid-row-gap:
+
+/* grid-gap:30px */
+/* grid-column-gap: 20px;
+grid-row-gap: 30px; */
+
+grid-gap:30px 50px;
+
+grid positioning:
+grid-row-start:2;
+grid-row-end:3;
+grid-column-start: 1;
+grid-column-end: 2;
+
+Short hand property:
+grid-row: 1/2;
+grid-column:1/2 ;
+
+
+Media Queries:
+
+Responsiveness
+@media screen and(){
+
+}
+
+Gradient:
+color transitions:
+
+linear-gradient:
+top to bottom
+
+radial-gradient:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
