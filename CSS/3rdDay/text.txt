@@ -1,0 +1,120 @@
+Pseudo classes
+Font awesome icons
+Bootstrap
+
+
+Pseudo classes
+
+selector:Pseudo class{
+    css properties
+}
+ anchor tag
+
+ link
+ visited
+ hover
+ active
+
+ LoVe HAte
+
+
+ display:none
+ Its is hidden and its takes no space
+ 
+ visiblity:hidden
+ It is not visible but its doesnt leave its original space
+
+
+DropDown Example
+
+Position:Relative Absolute
+Display:Block/none
+Pseudo class:hover
+linear-gradient
+
+with other CSS properties
+design this dropdown
+
+
+fontawesome:
+
+https://cdnjs.com/libraries/font-awesome
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+Bootstrap:
+
+
+Visuality wise in a good website:
+
+Organised presentation
+Loading 
+Design and color ,transitions and animations,images,content quantity,icons
+====>>>>>>>Look and feel <<<<<<<<=========================
+Fit to any screen
+======>>>>>>>>Responsiveness<<<<<<<=============
+                Bootstrap
+
+
+1-horizontal Scrollbar 
+2-Fit to screen resolution
+
+
+
+Grid=12 coloumns
+Total 12 
+12=>4 4 4
+12=>6 6 
+12=>111111111
+12=>3 3 3 3
+
+
+
+Extra small=>   <576px
+Small=>     sm  ≥576px <768px
+Medium=>     md  ≥768px <992px grteter then 768 lessathn 992
+Large=>      lg ≥992px <1200px	
+X-Large=>   xl ≥1200px <1400px
+XX-Large=>  xxl  ≥1400px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

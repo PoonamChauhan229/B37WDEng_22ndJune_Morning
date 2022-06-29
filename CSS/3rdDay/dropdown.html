@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+
+   <style>
+     .dropdown{
+        position:relative;
+        padding: 10px;
+        width:55px;
+        border:1px solid green;
+        background-image: linear-gradient(red,orange,green);
+    }
+    .dropdownlist{
+        position: absolute;
+        left:30px;
+        display:none;
+        background-image: linear-gradient(gray,black,gray);
+        color:white;
+        padding: 10px;
+
+    }
+
+    .dropdown:hover .dropdownlist{
+        display: block;
+    }
+    .coursename{
+        padding: 5px;
+        border-bottom: 1px solid white;
+    }
+   </style>
+
+</head>
+<body>
+    <div class="dropdown">Courses        
+        <div class="dropdownlist">
+            <div class="coursename">HTML</div>
+            <div class="coursename">CSS</div>
+            <div class="coursename">Javascript</div>
+            <div class="coursename">React</div>
+            <div class="coursename">Node</div>
+        </div>
+    </div>
+</body>
+</html>
