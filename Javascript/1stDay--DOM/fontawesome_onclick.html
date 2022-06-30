@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FontAwesome</title>
+    <style>
+        .container{
+            border:1px solid black;
+            padding:5px 20px 20px 20px;
+            width:250px
+        }
+        .trashicon{
+            color:red;
+            font-size: 25px;
+            margin-left:40px;
+        }
+        .saveicon{
+            color:green;
+            font-size: 25px;   
+            margin-left: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    
+   <div class="container">
+    <h4>To do Task</h4>
+    <input type="text" name="" id=""><br><br>
+    <!-- <button>Delete</button> <button>Save</button><br> -->
+    
+  
+    <i class="fa-solid fa-trash-can trashicon" onclick="deleteTask()"></i>
+    <i class="fa-solid fa-floppy-disk saveicon" onclick="saveTask()"></i><br><br>
+    <i class="fa-solid fa-phone" onclick="callNow()"></i> 89809090990 call us!!!!
+
+
+
+   </div>
+
+   <script>
+    function deleteTask(){
+        console.log("Deleted Successfully")
+    }
+    function saveTask(){
+        console.log("Saved Successfully")
+    }
+    function callNow(){
+        console.log("Call us for More information!!!")
+    }
+   </script>
+</body>
+</html>

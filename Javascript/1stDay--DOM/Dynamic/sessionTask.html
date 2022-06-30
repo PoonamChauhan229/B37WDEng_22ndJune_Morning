@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Create the below Teamplate By Using Javasript -->
+    <!-- <div class="container">
+        <div class="row container">
+            <div class="col">Hi</div>
+        </div>
+    </div> -->
+   
+    <script>
+        // 2 ways
+
+        // 1st way-InnerHTML
+        var firstDiv=document.createElement('div')
+        firstDiv.classList.add('container')
+        firstDiv.innerHTML=`
+        <div class="row container">
+            <div class="col">Hi</div>
+        </div>`
+
+        document.body.append(firstDiv)
+
+        // 2nd way
+
+        var secondDiv=document.createElement('div')
+        secondDiv.classList.add('container')
+
+        var rowDiv=document.createElement('div')
+        rowDiv.classList.add('row','container')
+
+        var colDiv=document.createElement('div')
+        colDiv.setAttribute('class','col')
+
+        colDiv.innerText="Hi"  
+        
+        rowDiv.append(colDiv)
+        secondDiv.append(rowDiv)
+        document.body.append(secondDiv)
+
+
+        // body=>secondDiv=>rowDiv=>colDiv
+
+
+
+
+
+
+    </script>
+</body>
+</html>

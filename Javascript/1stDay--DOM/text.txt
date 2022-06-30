@@ -1,0 +1,166 @@
+HTML-To define the content of the page
+CSS-To style/design the webpage
+JS-to program the behaviour of our webpage
+
+Application:
+create dynamic dropdown
+dispalying date and time
+Interactive websites
+
+DOM/DOM Manipulation
+
+DOM:DOCUMENT OBJECT MODEL
+
+
+Live Dom View
+https://software.hixie.ch/utilities/js/live-dom-viewer/
+
+
+console.log(document)
+console.log(document.all)
+
+
+3 Steps:
+In console
+
+var div1=document.createElement('div')
+>>undefined
+div1.innerText="This is a div Tag"
+>>'This is a div Tag'
+document.body.append(div1)
+>>undefined
+
+
+var div2=document.createElement('p')
+>>undefined
+div2.innerText="<h1>This is an h1 Tag</h1>"
+>>'<h1>This is an h1 Tag</h1>'
+document.body.append(div2)
+
+
+undefined
+div2.innerHTML="<h1>This is an h1 Tag</h1>"
+>>'<h1>This is an h1 Tag</h1>'
+
+
+innerText:InnerText is used to print the plain text
+innerHTML:InnerHTML is used to print our elements
+
+
+var div3=document.createElement('span')
+>>undefined
+div3.innerHTML="Hello Guvi"
+'Hello Guvi'
+document.body.append(div3)
+>>undefined
+
+
+var newdiv=document.createElement('div')
+>>undefined
+newdiv.innerHTML="Hello, Welcome to GUVI World!!!"
+>>'Hello, Welcome to GUVI World!!!'
+newdiv.style.color="orange"
+>>'orange'
+document.body.append(newdiv)
+>>undefined
+
+
+Create elements
+Styling elements
+
+=>ID and class
+setAttribute
+
+setAttribute('class','classname')
+setAttribute('id','idname')
+
+
+multiple classess:
+classlist.add('classname1','classnem2','classname3')
+
+Target DOM
+
+id:document.getElementById(idname)
+=>inside particular document get that
+ particular Id which has this id name
+=>give first element
+=>unique
+
+classname:document.getElementsByClassName(classname)
+inside particular document get
+ all classes which has this classname
+ =>Returns an array
+
+Tagname:document.getElementByTagName(TagName)
+inside particular document get
+all tag which has this tagname
+=>Returns an array
+
+
+If we want to access the element by CSS selector
+querySelector:Selects the first element
+class:
+document.querySelector('.classname')
+id:
+document.querySelector('#idname')
+
+querySelectorAll:
+=>Select all the elements
+=>Returns an array in the form of nodelist
+=>Nodelist is an colletion of document nodes
+(element nodes,attribute nodes and text nodes)
+class:
+document.querySelectorAll('.classname')
+id:
+document.querySelectorAll('#idname')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
