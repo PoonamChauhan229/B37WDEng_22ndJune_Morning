@@ -1,0 +1,54 @@
+settimeout
+setinterval
+alert
+promptbox
+confirmbox
+
+1 table via DOM
+
+What is
+setTimeout:
+=>execvuted after specific time
+=>only once
+=>perform operations/animation
+
+Syntax
+
+setTimeout(function,delay)
+function=>what needs to be excuted
+delay=>timer in milliseconds
+(1000ms=1sec)
+
+ setTimeout(add,6000,3,2)
+
+ ?example
+
+ 3sec//3000ms
+ width:200px
+ bgcolor:pink
+
+
+ clearTimeout(id)
+
+ <!--  1to 10
+    10=>Happy Birthday
+    -->
+
+    setinterval:
+    you can call same function again and gain after certian time period
+
+    setTimeout(function,delay)
+
+    animation:
+
+    move the particular div
+    clearInterval()
+
+
+     <!--  1to 10
+    10=>Happy Birthday
+    -->
+
+
+    alert
+    confirm box promptbox
