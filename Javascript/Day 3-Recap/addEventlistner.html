@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onclick  -->
+    <button id="button" onclick="newClick(event)">Submit</button>
+    <br>
+    <button id="button1">Click Me</button>
+    <br>
+    <input type="text" name="" id="input1">
+    <p id="log1"></p>
+    <br>
+    <input type="text" name="" id="input2">
+    <p id="log2"></p>
+
+
+
+    <script>
+        function newClick(event){
+            console.log("Button is Clicked")
+            console.log(event)
+            console.log(event.target.id)
+            console.log(event.target.innerText)
+        }
+
+        // Via DOM =>addEventlistner
+        // 2 parameters=>event,function
+
+        var button1=document.getElementById('button1')
+        // console.log(button1)
+
+        button1.addEventListener('click',function clickEventNew(e){
+            console.log("new button clicked")
+            console.log(e)
+            console.log(e.target.id)
+        })
+
+        var input1=document.getElementById('input1')
+        // console.log(input1)
+
+        input1.addEventListener('input',function handleChange(e){
+            console.log("OnInput event occured")
+            console.log(e)
+            console.log(e.target.value)
+       
+        var ptext=document.getElementById('log1')
+        ptext.innerText=e.target.value;
+    })
+
+    var input2=document.getElementById('input2')
+    console.log(input2)
+
+    input2.addEventListener('blur',function  blurEvent(e){
+        console.log("blur event")
+        console.log(e)
+        console.log(e.target.value)
+    })
+
+
+    </script>
+</body>
+</html>

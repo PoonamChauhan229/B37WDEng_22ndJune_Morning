@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="bulbContainer">
+            <img id="bulbImage"src="https://i.ibb.co/4Y3fCLv/pic-bulbon.gif" alt="">
+        </div>
+        <button id="button">Switch OFF</button>
+    </div>
+
+    <script>
+        var button=document.getElementById("button")
+        var bulbImage=document.getElementById('bulbImage')
+        button.addEventListener('click',function bulbswitches(){
+
+            if(bulbImage.src.match('https://i.ibb.co/4Y3fCLv/pic-bulbon.gif')){
+                bulbImage.src="https://i.ibb.co/PZHKWG4/pic-bulboff.gif"
+                button.innerText="Switch On"
+            }
+            else{
+                bulbImage.src="https://i.ibb.co/4Y3fCLv/pic-bulbon.gif"
+                button.innerText="Switch OFF"
+
+
+            }
+            console.log("bulb button is clicked")
+
+           
+
+        })
+    </script>
+</body>
+</html>
+
+
+<!-- https://i.ibb.co/4Y3fCLv/pic-bulbon.gif
+    https://i.ibb.co/PZHKWG4/pic-bulboff.gif
+-->
