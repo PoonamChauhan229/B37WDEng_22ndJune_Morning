@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a Javascript code for character counts in the textarea. -->
+
+    <input type="text" name="" id="inputText" value=""><br>
+    <span id="spanElement"></span><br><br>
+    
+    <span id="spanElement1"></span> 
+
+    <script>
+        var inputText=document.getElementById('inputText')
+        
+        var spanElement=document.getElementById('spanElement')
+
+        var spanElement1=document.getElementById('spanElement1')
+
+
+        inputText.addEventListener('input',()=>{
+            var inputData=inputText.value
+            // console.log(inputData)
+            console.log(inputData.length)
+            spanElement.innerText=inputData.length; 
+            
+            // console.log(inputData.replace(/ /g,""))
+            console.log(inputData.replace(/ /g,"").length)
+
+            spanElement1.innerText=inputData.replace(/ /g,"").length
+        })
+    </script>
+</body>
+</html>
+
+<!-- var a="Hello World"
+undefined
+a.replace("o","p")
+'Hellp World'
+a.replace(/l/g,"k")
+'Hekko Workd' -->
