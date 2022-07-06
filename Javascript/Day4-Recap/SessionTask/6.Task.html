@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- With Javascript write a simple form validation -->
+    <!-- if there is error show the error -->
+    <!-- username and password -->
+    <form onsubmit="formSubmit(event)">
+        <label for="username">UserName:</label>
+        <input type="text" name="uname" id="username">
+        <span id="errorname"></span>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="pwd" id="password">
+        <span id="errorpwd"></span>
+
+        <br><br>
+        <!-- <input type="submit" value="Submit"> -->
+        <button type="submit">Submit</button>
+    </form>
+        <script>
+            function formSubmit(event){
+                event.preventDefault();
+                console.log(event)
+
+                var username=document.getElementById('username')
+                console.log(username.value)
+                var password=document.getElementById('password')
+                console.log(password.value)
+
+                var errorname=document.getElementById('errorname')
+                var errorpwd=document.getElementById('errorpwd')
+
+                if(username.value.length<5){
+                    console.log("less than 5")
+                    errorname.innerText="Username characters should be greater than 5"
+                }
+
+                if(password.value.length<5){
+                    errorpwd.innerText="Weak Password"
+                    console.log(password.value.length)
+                }
+                else if(password.value.length>5 && password.value.length<10 ){
+                    errorpwd.innerText="Strong Password"
+                    console.log(password.value.length)
+                }
+                else if(password.value.length>10){
+                    console.log(password.value.length)
+                    errorpwd.innerText="Password Length should not be more than 9 characters"
+                }
+            }
+        </script>
+    
+
+
+</body>
+</html>

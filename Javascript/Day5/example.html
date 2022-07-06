@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hi")
+        console.log("Hi hello1")
+        console.log("Hi hello2")
+
+        setTimeout(()=>{
+            console.log("Hi Guvi")
+        },2000)
+
+// callback queue-1
+
+        console.log("App started")
+
+        // asynchrous
+        setTimeout(()=>{
+            console.log("App under processing")
+        },5000)
+
+        // callback queue=2
+
+        setTimeout(()=>{
+            console.log("App still under processing")
+        },0)
+
+        // call back queue3
+
+
+        console.log("App executed")
+
+
+
+        // callback
+
+        // function inside a function
+
+        function x(){
+
+        }
+
+        function y(){
+
+        }
+
+        // y should be executed only if x is executed
+        // call back
+
+    </script>
+</body>
+</html>

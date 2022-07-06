@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+</head>
+<body>
+    <!-- 
+        When user press any key in your html page 
+        show a alert that Invalid Key Pressed,
+        but when user press 
+        spacebar show an alert Thank You..!! and close the current window.
+
+        alert()
+        htmlpage=>document
+        keyup
+     -->
+     <script>
+        document.addEventListener('keyup',(e)=>{
+            console.log(e)
+            console.log(e.code)
+
+            if(e.code=="Space"){
+                console.log("Space Pressed!")
+                alert("Thank You..!! ")
+                window.close()
+            }
+            else{
+                console.log("Invalid Key Pressed")
+                alert("Invalid Key Pressed")
+            }
+            
+        })
+     </script>
+
+</body>
+</html>

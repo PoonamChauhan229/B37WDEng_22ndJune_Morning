@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function callMe(){
+            console.log("I M a CallBack Function")
+        }
+
+        function workDone(work,callback){
+            console.log(`My Work is ${work}`)
+            callback()
+        }
+
+        workDone("Playing",callMe)
+
+
+
+        // convert display/sum into callback
+
+        function display(res){
+            console.log(res)
+        }
+
+        function sum(n1,n2,callback){
+            var sum1=n1+n2; //6
+            callback(sum1)//display function called
+        }
+
+        sum(2,4,display)
+
+
+    //another example
+    function greet(name){
+            console.log(`My name is ${name}`)
+        }
+
+
+    function Welcome(callback){
+        var fullname="ABC DEF"
+        callback(fullname)
+
+    }
+    
+    Welcome(greet)   
+    
+    // memory
+    // you can wait for the result of a previous function call
+    // and exceute another function call
+    // asynchronous nature
+
+    </script>
+
+
+
+</body>
+</html>
