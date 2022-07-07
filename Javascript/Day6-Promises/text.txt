@@ -1,0 +1,49 @@
+Promises:
+To overcome to callback hell 
+
+OWE/OATH
+
+Promise is one of method of handling async nature
+
+So all the developer go for Promise
+
+Promise is an object and it accepts funtion as a parameter
+=>new
+
+function takes 2 parameter
+=>resolve
+=>reject
+Synatx:
+ const p= new Promise(()=>{})
+
+ # 3 States of Promises:
+ 1.Pending=>Initial State=>Pending unless and until async ops is in process
+ 2.fulfiled=>Fullfilled, we will get value=>.then()
+ 3.Rejected=>fails , we will get error=>.catch()=>handle error
+
+ Promise can be either rejected or resolve
+ Both cannot happen at the same time
+
+Initial state=>Pending
+Return type=>Object
+
+chnaging promises
+=>handle multiple async operations
+=>multiple .then will be used
+=>complexity increases
+
+To avoid chnaging, we have async and await 
+
+
+multiple
+Its is not an effective way 
+in such cases, Promise.all
+Promise All:
+// returns an array
+// untill all the promises are fulfiled it wont execute
+// iterabale form
+
+// if a promise failes
+// it will directly go to catch block and rest promises will not execute
+
+// promise.all is not an effective way

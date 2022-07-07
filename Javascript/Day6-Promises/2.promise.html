@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function writePromise(){
+            return new Promise((resolve,reject)=>{
+                if(false){
+                    resolve("Show Resolve Status")
+                }else{
+                    reject("Show Rejected Status")
+                }
+            })
+        }
+        writePromise().then((res)=>{console.log(res)})
+        .catch((error)=>{console.log(error)})
+
+        // setTimeOut
+
+        function writePromiseSetTimeOut(){
+            return new Promise((resolve,reject)=>{
+                if(true){
+                    setTimeout(()=>{
+                        resolve("SetTimeout executed")
+                    },2000)
+                }else{
+                    setTimeout(()=>{
+                        reject("Rejected")
+                    },2000)
+                }
+
+            })
+        }
+        writePromiseSetTimeOut().then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+
+
+    </script>
+</body>
+</html>

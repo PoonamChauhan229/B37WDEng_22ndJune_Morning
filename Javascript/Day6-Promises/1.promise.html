@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // voting=>age
+        var age1=23;
+        const p=new Promise((resolve,reject)=>{
+            if(age1>20){
+                resolve("Eligible for Voting")
+            }
+            else{
+                reject("Not Eligible for Voting")
+            }
+        })
+        console.log(p)
+
+
+        // Prompt Box
+
+        var age2=prompt("Enter the Age:")
+        // console.log(age)
+        const p1=new Promise((resolve,reject)=>{
+            if(age2>20){
+                resolve("Eligible for Voting")
+            }
+            else{
+                reject("Not Eligible for Voting")
+            }
+        })
+        console.log(p1)
+
+
+
+        var age3=2;
+        const p3=new Promise((resolve,reject)=>{
+            if(age3>20){
+                resolve("Eligible for Voting-Noraml")
+            }
+            else{
+                reject("Not Eligible for Voting-normal")
+            }
+        })
+        // console.log(p3)
+        // to aceess the fulfill value,.then()
+        p3.then((res)=>{
+            console.log(res)
+        })
+        // not fulfill =>failure=>error//handle error
+        .catch((err)=>{
+            console.log(err)
+        })
+
+
+        // Prompt=>then/catch
+
+        var age4=prompt("Enter the Age:")
+        // console.log(age)
+        const p4=new Promise((resolve,reject)=>{
+            if(age4>20){
+                resolve("Eligible for Voting-Prompt")
+            }
+            else{
+                reject("Not Eligible for Voting-Prompt")
+            }
+        })
+        console.log(p4)
+        p4.then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+
+
+    </script>
+</body>
+</html>

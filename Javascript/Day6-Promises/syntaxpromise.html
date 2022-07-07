@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p= new Promise(()=>{})
+        console.log(p)
+
+
+        const p1=new Promise((resolve,reject)=>{
+            resolve("Promise Resolved")
+        })
+        console.log(p1)
+
+        const p2=new Promise((resolve,reject)=>{
+            reject("Promise Rejected")
+        })
+        console.log(p2)
+
+
+        const p3=new Promise((resolve,reject)=>{
+            resolve("Promised Is kept")
+            reject("Promise not kept")
+        })
+        console.log(p3)
+
+
+        const p4=new Promise((resolve,reject)=>{           
+            reject("Promise not kept")
+            resolve("Promised Is kept")
+        })
+        console.log(p4)
+
+
+        // if condition
+
+        const p5=new Promise((resolve,reject)=>{
+            if(true){
+                resolve("Meet My Friend")
+            }else{
+                reject("Sorry, Couldnt turn up!!!")
+            }
+        })
+        console.log(p5)
+
+
+        const p6=new Promise((resolve,reject)=>{
+            if(false){
+                resolve("Meet My Friend")
+            }else{
+                reject("Sorry, Couldnt turn up!!!")
+            }
+        })
+        console.log(p6)
+
+
+
+
+    </script>
+</body>
+</html>
