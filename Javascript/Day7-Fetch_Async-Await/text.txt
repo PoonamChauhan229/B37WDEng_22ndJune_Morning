@@ -1,0 +1,25 @@
+fetch:
+It provides an interface for fetching resources
+It is an alternative XML Http Request
+It is used for accessing performinh HTTP operation async
+
+var req=fetch("URL")
+
+Result of fetch is always an Promise
+
+Pending state
+data:
+
+[[PromiseResult]]: Response
+body: (...)
+
+Holds the data in ReadableStream
+
+ReadableStream:format where actually the resultant of header are stored
+Successive .then to be used to get the output
+
+Drwbacks:
+Simple promise is okay
+mulitple promises=>multiple .then .catch=>burden on the task
+
+async and await

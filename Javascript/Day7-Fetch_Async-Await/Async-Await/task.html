@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // extract the cityname from restcountries and pass it to waether api
+        // 0Th Index=>Output
+        // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+        var extractCityName=fetch("https://restcountries.com/v2/all")
+        .then((res)=>{return res.json()})
+        .then((data)=>{
+            console.log(data)
+            console.log(data[0].name)
+            let cityName=data[0].name
+            
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=68efa0885519a6f01d76917c463ada68`)
+            .then((res)=>{return res.json()})
+            .then((data)=>{console.log(data)})
+        })
+
+
+        // async and await
+        // try and catch 
+        async function getWeatherData(){
+            try{
+            let data=await fetch("https://restcountries.com/v2/all")
+            let res=await data.json()
+            console.log(res)
+            console.log(res[0].name)
+            cityName=res[0].name
+
+            let data1=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=68efa0885519a6f01d76917c463ada68`)
+            // console.log(data1)
+            let res1=await data1.json()
+            console.log(res1)
+            }            
+            catch(err){
+                console.log(`Error found:${err}`)
+            }
+        }
+        getWeatherData()
+
+
+
+    </script>
+</body>
+</html>
