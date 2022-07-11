@@ -1,0 +1,8 @@
+CRUD
+
+C-Create=>POST Method(Add some data)
+R-Read=>GET Method
+U-Update=>PUT Method(some specific id)
+D-Delete=>DELETE(some specific id)
+
+mockapi:

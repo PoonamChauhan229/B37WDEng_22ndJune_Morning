@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <script>
+        let url = "https://62cbb33f8042b16aa7c11bf3.mockapi.io/user";
+        // read
+
+        async function getUsersData() {
+            let data = await fetch(url)
+            let res = await data.json()
+            console.log(res)
+            console.table(res)
+        }
+        getUsersData()
+
+        // read data with specific Id
+        // id no-1
+        console.log(url + "/1")
+        console.log(url + "/1")
+
+        async function getUsersSpecificData() {
+            let data = await fetch(url + "/1")
+            let res = await data.json()
+            console.log(res)
+            console.table(res)
+        }
+        getUsersSpecificData()
+
+        // create=>POST Method
+
+        async function createnewUserData() {
+            let newUser = {
+                email: "guvi57@gmail.com",
+                name: "Guvi Geek"
+            }
+
+            let data= await fetch(url,{
+                method:"POST",
+                headers:{'Content-type':"application/json"},
+                body:JSON.stringify(newUser)
+            })
+
+            let res=await data.json()
+            console.log(res)
+            console.table(res)
+        }
+        createnewUserData()
+
+        // update=>PUT Method
+
+        async function updateUsersData(){
+            let newUser = {
+                email: "57guvi@gmail.com",
+                name: "Geek Guvi"
+            }
+            let data= await fetch(url+"/10",{
+                method:"PUT",
+                headers:{'Content-type':"application/json"},
+                body:JSON.stringify(newUser)
+            })
+
+            let res=await data.json()
+            console.log(res)
+
+        }
+        updateUsersData()
+
+        // DELETE=>Delete Method
+
+        async function deleteUsersData(){
+            // let data=await fetch(url+"/19",{
+            let data=await fetch(`${url}/18`,{
+             method:"DELETE"
+            })
+            let res=await data.json()
+            console.log(res)
+        }
+        deleteUsersData()
+        getUsersData()
+
+    </script>
+</body>
+
+</html>
