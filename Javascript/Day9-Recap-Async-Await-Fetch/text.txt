@@ -1,0 +1,12 @@
+1-Weather App=>
+
+inputbox
+submit button
+
+wrt to city name we will be getting the weather forecast details
+
+
+2-Movie App
+
+navbar=>search button=>respective movie
+container=>Movie poster,ratings, description=>display
