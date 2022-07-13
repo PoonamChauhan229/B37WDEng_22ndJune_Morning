@@ -1,0 +1,4 @@
+Use Covid-19 Api
+1-Similar to Weather App
+
+2-Plot the death cases on 3D Globe
